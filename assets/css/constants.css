@@ -4,9 +4,15 @@
  * Keep colors and reusable theme values here.
  */
 :root {
-  --theme-color-primary: #1e1e1e;
-  --theme-color-secondary: #ffffff;
+  :root {
+  --theme-color-primary: #141414;
+  --theme-color-secondary: #141414;
+  --theme-color-tertiary: #ffffff;
+  --theme-color-accent: rgba(30, 30, 30, 0.15);
+  --theme-color-accent-2: rgba(30, 30, 30, 0.55);
+  --theme-color-body: #ffffff;
   --theme-transition: all 0.3s ease-in-out;
+}
 
 --theme-font-size-base: 16px;
   --theme-font-size-large: 20px;
@@ -14,5 +20,8 @@
 
 --theme-font-inter: "Inter", sans-serif;
 --theme-font-bodonimoda: "Bodoni Moda", serif;
+
+--theme-font-body: var(--theme-font-inter);
+--theme-font-heading: var(--theme-font-bodonimoda);
 
 }

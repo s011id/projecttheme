@@ -39,3 +39,14 @@
 .projecttheme-image-slider .carousel-item img {
   object-fit: cover;
 }
+
+
+.btn:hover {
+  background-color: var(--theme-color-accent); /* 15% #1E1E1E */
+}
+
+.btn:disabled,
+.is-unavailable {
+  color: var(--theme-color-accent-2); /* 55% #1E1E1E */
+  pointer-events: none;
+}

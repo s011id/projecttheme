@@ -2,7 +2,8 @@
  * Header
  */
 header {
-  background-color: white;
+  background-color: var(--theme-color-body);
+  border-bottom: 1px solid var(--theme-color-primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,11 +15,10 @@ header {
   padding: 1rem;
 }
 
-
 @media (min-width: 767px) {
   header {
     position: relative;
-  padding: 2rem 3rem;
+    padding: 2rem 3rem;
   }
 }
 
