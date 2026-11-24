@@ -77,6 +77,27 @@ while (have_rows('page_modules')) : the_row();
 
     case 'google_map':
       get_template_part('template-parts/flex/layout', 'google-map'); break;
+
+    case 'project_highlight':
+      get_template_part('template-parts/flex/layout', 'project-highlight'); break;
+
+    case 'main_pages_desktop':
+      get_template_part('template-parts/flex/layout', 'main-pages-desktop'); break;
+
+    case 'home_desktop':
+      get_template_part('template-parts/flex/layout', 'home-desktop'); break;
+
+    case 'workshops':
+      get_template_part('template-parts/flex/layout', 'workshops'); break;
+
+    case 'open_atelier':
+      get_template_part('template-parts/flex/layout', 'open-atelier'); break;
+
+    case 'about':
+      get_template_part('template-parts/flex/layout', 'about'); break;
+
+    case 'sign_in':
+      get_template_part('template-parts/flex/layout', 'sign-in'); break;
   }
 
   if (function_exists('section_close')) {

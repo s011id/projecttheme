@@ -3,3 +3,514 @@
  *
  * Add page-specific theme styles here.
  */
+.main_pages_desktop {
+  min-height: 100vh;
+  min-height: 100svh;
+  padding-block: 0 !important;
+  overflow: hidden;
+  position: relative;
+  background-color: #22251f;
+  color: #fff;
+}
+
+.main_pages_desktop > .container-lg {
+  display: grid;
+  min-height: inherit;
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  place-items: center;
+  position: relative;
+}
+
+.main-pages-desktop {
+  display: grid;
+  min-height: inherit;
+  place-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.main-pages-desktop__background,
+.main-pages-desktop__background::after {
+  position: absolute;
+  inset: 0;
+}
+
+.main-pages-desktop__background::after {
+  background: rgba(15, 17, 13, 0.42);
+  content: "";
+}
+
+.main-pages-desktop__image {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.main-pages-desktop__content {
+  padding: 1.5rem;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.main-pages-desktop__title {
+  color: #fff;
+  font-family: var(--theme-font-heading);
+  font-size: clamp(3rem, 5vw, 6rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 0.95;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+body:has(#main > .main_pages_desktop) .site-header {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  position: absolute;
+}
+
+body:has(#main > .main_pages_desktop) .site-header .site-logo,
+body:has(#main > .main_pages_desktop) #site-navigation .main-menu li a,
+body:has(#main > .main_pages_desktop) .menu-toggle {
+  filter: brightness(0) invert(1);
+  color: #fff;
+}
+
+body:has(#main > .main_pages_desktop) #site-navigation.is-open {
+  background: #22251f;
+}
+
+@media (max-width: 767px) {
+  .main_pages_desktop,
+  .main_pages_desktop > .container-lg {
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+
+  .main-pages-desktop__title {
+    font-size: clamp(3rem, 15vw, 5rem);
+  }
+}
+
+.home_desktop {
+  min-height: 920px;
+  overflow: hidden;
+  padding-block: 0 !important;
+  position: relative;
+  background: #242822;
+  color: #fff;
+}
+
+.home_desktop > .container-lg,
+.home_desktop > .container-none,
+.home_desktop > .container,
+.home_desktop > .container-fluid {
+  height: 100%;
+  max-width: none;
+  min-height: inherit;
+  padding: 0;
+}
+
+.home-desktop {
+  display: grid;
+  min-height: inherit;
+  place-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.home-desktop__background {
+  inset: 0;
+  position: absolute;
+}
+
+.home-desktop__image {
+  display: block;
+  filter: brightness(0.35) saturate(1.5);
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.home-desktop__content {
+  padding: 7.5rem 1.5rem 3.5rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.home-desktop__title {
+  color: #fff;
+  font-family: "Bodoni Moda", serif;
+  font-size: clamp(3.25rem, 4.2vw, 4.75rem);
+  font-weight: 700;
+  line-height: 1.08;
+  margin: 0 auto;
+  max-width: 760px;
+  text-wrap: balance;
+}
+
+body:has(#main > .home_desktop) .site-header {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  position: absolute;
+}
+
+body:has(#main > .home_desktop) .site-header .site-logo,
+body:has(#main > .home_desktop) #site-navigation .main-menu li a,
+body:has(#main > .home_desktop) .menu-toggle {
+  filter: brightness(0) invert(1);
+  color: #fff;
+}
+
+@media (max-height: 920px) {
+  .home_desktop {
+    min-height: 100svh;
+  }
+}
+
+@media (max-width: 767px) {
+  .home_desktop {
+    min-height: 100svh;
+  }
+
+  .home-desktop__title {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+}
+
+.workshops {
+  min-height: 920px;
+  overflow: hidden;
+  padding-block: 0 !important;
+  position: relative;
+  background: #242822;
+  color: #fff;
+}
+
+.workshops > .container-lg,
+.workshops > .container,
+.workshops > .container-fluid,
+.workshops > .container-none {
+  height: 100%;
+  max-width: none;
+  min-height: inherit;
+  padding: 0;
+}
+
+.workshops-hero {
+  display: grid;
+  min-height: inherit;
+  place-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.workshops__background {
+  inset: 0;
+  position: absolute;
+}
+
+.workshops__image {
+  display: block;
+  filter: brightness(0.45);
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.workshops__content {
+  padding: 7.5rem 1.5rem 3.5rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.workshops__title {
+  color: #fff;
+  font-family: "Bodoni Moda", serif;
+  font-size: clamp(3.25rem, 4.2vw, 4.75rem);
+  font-weight: 700;
+  line-height: 1.12;
+  margin: 0 auto;
+  max-width: 820px;
+  text-wrap: balance;
+}
+
+body:has(#main > .workshops) .site-header {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  position: absolute;
+}
+
+body:has(#main > .workshops) .site-header .site-logo,
+body:has(#main > .workshops) #site-navigation .main-menu li a,
+body:has(#main > .workshops) .menu-toggle {
+  filter: brightness(0) invert(1);
+  color: #fff;
+}
+
+@media (max-height: 920px) {
+  .workshops {
+    min-height: 100svh;
+  }
+}
+
+@media (max-width: 767px) {
+  .workshops {
+    min-height: 100svh;
+  }
+
+  .workshops__title {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+}
+
+.open_atelier {
+  min-height: 920px;
+  overflow: hidden;
+  padding-block: 0 !important;
+  position: relative;
+  background: #242822;
+  color: #fff;
+}
+
+.open_atelier > .container-lg,
+.open_atelier > .container,
+.open_atelier > .container-fluid,
+.open_atelier > .container-none {
+  height: 100%;
+  max-width: none;
+  min-height: inherit;
+  padding: 0;
+}
+
+.open-atelier {
+  display: grid;
+  min-height: inherit;
+  place-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.open-atelier__background {
+  inset: 0;
+  position: absolute;
+}
+
+.open-atelier__image {
+  display: block;
+  filter: brightness(0.45);
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.open-atelier__content {
+  padding: 7.5rem 1.5rem 3.5rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.open-atelier__title {
+  color: #fff;
+  font-family: "Bodoni Moda", serif;
+  font-size: clamp(3.25rem, 4.2vw, 4.75rem);
+  font-weight: 700;
+  line-height: 1.12;
+  margin: 0 auto;
+  max-width: 820px;
+  text-wrap: balance;
+}
+
+body:has(#main > .open_atelier) .site-header {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  position: absolute;
+}
+
+body:has(#main > .open_atelier) .site-header .site-logo,
+body:has(#main > .open_atelier) #site-navigation .main-menu li a,
+body:has(#main > .open_atelier) .menu-toggle {
+  filter: brightness(0) invert(1);
+  color: #fff;
+}
+
+@media (max-height: 920px) {
+  .open_atelier {
+    min-height: 100svh;
+  }
+}
+
+@media (max-width: 767px) {
+  .open_atelier {
+    min-height: 100svh;
+  }
+
+  .open-atelier__title {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+}
+
+.about {
+  min-height: 520px;
+  background: #fff;
+  padding-block: 7.5rem 6.5rem !important;
+}
+
+.about > .container-lg,
+.about > .container,
+.about > .container-fluid,
+.about > .container-none {
+  max-width: 970px;
+  padding-inline: 1.5rem;
+}
+
+.about-quote {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.about-quote__text {
+  color: #111;
+  font-family: var(--theme-font-heading);
+  font-size: clamp(2.25rem, 3.3vw, 3.75rem);
+  font-weight: 700;
+  line-height: 1.28;
+  margin: 0;
+  max-width: 900px;
+  padding: 0;
+  quotes: none;
+}
+
+.about-quote__attribution {
+  color: #111;
+  font-family: var(--theme-font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1.75rem 0 0 auto;
+  text-align: right;
+  width: fit-content;
+}
+
+@media (max-width: 767px) {
+  .about {
+    min-height: 420px;
+    padding-block: 4.5rem 4rem !important;
+  }
+
+  .about-quote__text {
+    font-size: clamp(2rem, 8vw, 3rem);
+    line-height: 1.25;
+  }
+
+  .about-quote__attribution {
+    font-size: 0.875rem;
+  }
+}
+
+.sign_in {
+  min-height: calc(100vh - 110px);
+  background: #fff;
+  padding-block: 4.5rem 7rem !important;
+}
+
+.sign_in > .container-lg,
+.sign_in > .container,
+.sign_in > .container-fluid,
+.sign_in > .container-none {
+  max-width: 970px;
+  padding-inline: 1.5rem;
+}
+
+.sign-in {
+  width: 100%;
+}
+
+.sign-in__form-wrap {
+  margin-left: auto;
+  max-width: 650px;
+  width: 58%;
+}
+
+.sign-in__title {
+  color: #111;
+  font-family: var(--theme-font-heading);
+  font-size: clamp(4.25rem, 7vw, 6.5rem);
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 2.25rem;
+  text-transform: uppercase;
+}
+
+.sign-in #loginform {
+  width: 100%;
+}
+
+.sign-in #loginform p {
+  margin-bottom: 1.35rem;
+}
+
+.sign-in #loginform label {
+  display: block;
+  font-family: var(--theme-font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+}
+
+.sign-in #loginform input[type="text"],
+.sign-in #loginform input[type="password"] {
+  border: 1px solid #8d8d8d;
+  border-radius: 0;
+  box-sizing: border-box;
+  font-family: var(--theme-font-body);
+  height: 42px;
+  padding: 0.55rem 0.75rem;
+  width: 100%;
+}
+
+.sign-in #loginform .login-submit {
+  margin-top: 0.25rem;
+  text-align: right;
+}
+
+.sign-in #loginform input[type="submit"] {
+  background: transparent;
+  border: 0;
+  color: #111;
+  font-family: var(--theme-font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .sign_in {
+    min-height: calc(100svh - 80px);
+    padding-block: 3rem 5rem !important;
+  }
+
+  .sign-in__form-wrap {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .sign-in__title {
+    font-size: clamp(3.5rem, 18vw, 5rem);
+  }
+}
